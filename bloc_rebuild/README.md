@@ -1,3 +1,7 @@
+# Possible solution:
+
+Add a Key (`UniqueKey` for example) to the `NumberView` in the case of same level modifications (adding or removing the `TextView`s). Use a `GlobalKey` when the update moves the `NumberView` down or up the tree wrt the previous rendering state (when the change adds a `Padding` widget as the parent of the `NumberView` for example).
+
 # bloc_rebuild
 
 A new Flutter project.
